@@ -25,7 +25,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(SCRIPT_DIR, "out")
 
 
-# helpers
+
 
 
 def http_json(url):
@@ -82,7 +82,7 @@ def tee_output(subdir, fname):
 
 
 
-# IP geolocation
+
 
 
 def cmd_ip(args):
@@ -140,7 +140,7 @@ def cmd_ip(args):
 
 
 
-# EXIF GPS extraction (pure stdlib, no PIL needed)
+
 
 
 TYPE_SIZE = {1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 6: 1, 7: 1, 9: 4, 10: 8}
@@ -279,7 +279,7 @@ def cmd_exif(args):
 
 
 
-# WiFi / cell lookup
+
 
 def _beacondb(payload):
     req = urllib.request.Request(
